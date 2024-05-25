@@ -11,13 +11,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Gafata&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data.min.js"></script>
 
     <title>uair by Paula Heenan</title>
 </head>
 <body>
 <div class="container">
     <h1>World Clock</h1>
-
     <select>
         <option value="">Select a city..</option>
         <option value="">London</option>
@@ -25,14 +26,18 @@
         <option value="">Hong Kong</option>
     </select>
     
-    <div class="city">
+    <div class="city" id="LA">
+        <div>
         <h2>Los Angeles 🇺🇸</h2>
         <div class="date">23 May 2024</div>
+        </div>
         <div class="time">1:48:15 AM</div>
     </div>
-    <div class="city">
+      <div class="city" id="kyiv">
+        <div>
         <h2>Kyiv 🇺🇦</h2>
         <div class="date">23 May 2024</div>
+        </div>
         <div class="time">12:24:15 AM</div>
     </div>
 </div>
