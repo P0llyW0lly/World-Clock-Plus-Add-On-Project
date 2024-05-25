@@ -10,7 +10,6 @@ function updateTime() {
             "h:mm:ss [<small>]A[</small>]"
         );
     }
-
     let kyivElement = document.querySelector("#kyiv");
     if (kyivElement) {
         let kyivDateElement = kyivElement.querySelector(".date");
@@ -23,10 +22,6 @@ function updateTime() {
         );
     }
 }
-
-updateTime();
-setInterval(updateTime, 1000);
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -35,8 +30,7 @@ function updateCity(event) {
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = `
-  <div class="city">
+  citiesElement.innerHTML =`<div class="city">
     <div>
       <h2>${cityName}</h2>
       <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
